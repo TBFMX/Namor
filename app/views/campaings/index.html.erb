@@ -1,0 +1,33 @@
+<h1>Listado de campañas</h1>
+
+<% if @selected_account.nil? %>
+  <div class="notice">No se a seleccionado ninguna cuenta!</div>
+
+<% else %>
+
+  <% if @campaigns.nil? or @campaigns.empty? %>
+    <ul><li>No se encontro ninguna campaña.</ul>
+  <% else %>
+    <ul><li>Total De Campañas: <%= @campaign_count %></ul>
+    <table>
+      <tr>
+        <th>ID
+        <th>Name
+        <th>Status
+    <% @campaigns.each do |id, campaign| %>
+      <tr>
+        <td><%= link_to campaign.id.to_s, assign_ca_path(campaign.id), :remote => true  %>
+        <td><%= campaign.name %>
+        <td><%= campaign.status %>
+    <% end %>
+    </table>
+  <% end %>
+
+<% end %>
+
+<div id="local-footer">
+  <span class="small-print"><%= link_to("Back to home", root_path) %></span>
+</div>
+
+
+<%= link_to 'New Campaing', new_campaing_path %>

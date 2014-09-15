@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AdwordsTbf</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <div id="global-header">
+  <% account_text = (@selected_account.nil?) ? 'Not selected' : @selected_account %>
+  <span>Cuenta Seleccionada: <%= account_text %></span> </br>
+  <span>Campaña Activa: <%= session[:active_camp].to_s %></span>
+  <span>Grupo Activo: <%= session[:active_gr].to_s %></span>
+</div>
+
+<div id="global-alers">
+  <% if flash[:alert] %>
+    <div class="alert"><%= flash[:alert] %></div>
+  <% end %>
+  <% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+  <% end %>
+</div>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+<div id="global-footer">
+  <span class="small-print"><%= link_to('Log out', logout_path) %></span>
+</div>
+</html>

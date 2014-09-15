@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  campaing_id: 1
+  name: MyString
+  amount: 1
+  gr_id: 1
+
+two:
+  campaing_id: 1
+  name: MyString
+  amount: 1
+  gr_id: 1

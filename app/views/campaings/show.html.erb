@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Camp name:</strong>
+  <%= @campaing.camp_name %>
+</p>
+
+<p>
+  <strong>Bud name:</strong>
+  <%= @campaing.bud_name %>
+</p>
+
+<p>
+  <strong>Camp:</strong>
+  <%= @campaing.camp_id %>
+</p>
+
+<p>
+  <strong>Bud:</strong>
+  <%= @campaing.bud_id %>
+</p>
+
+<p>
+  <strong>Bud amount:</strong>
+  <%= @campaing.bud_amount %>
+</p>
+
+<%= link_to 'Edit', edit_campaing_path(@campaing) %> |
+<%= link_to 'Back', campaings_path %>

@@ -1,0 +1,45 @@
+<%= form_for(@adword_text) do |f| %>
+  <% if @adword_text.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@adword_text.errors.count, "error") %> prohibited this adword_text from being saved:</h2>
+
+      <ul>
+      <% @adword_text.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name_gr %><br>
+    <%= f.text_field :name_gr %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br>
+    <%= f.number_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :ad_desc1 %><br>
+    <%= f.text_field :ad_desc1 %>
+  </div>
+  <div class="field">
+    <%= f.label :ad_desc2 %><br>
+    <%= f.text_field :ad_desc2 %>
+  </div>
+  <div class="field">
+    <%= f.label :ad_url %><br>
+    <%= f.text_area :ad_url %>
+  </div>
+  <div class="field">
+    <%= f.label :ad_display %><br>
+    <%= f.text_field :ad_display %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

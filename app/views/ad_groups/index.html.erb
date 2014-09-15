@@ -1,0 +1,23 @@
+<h1>Listing ad_groups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ad_groups.each do |ad_group| %>
+      <tr>
+        <td><%= link_to ad_group[:id], assign_gr_path(ad_group[:id]), :remote => true  %> </td>
+        <td><%= ad_group[:name]%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ad group', new_ad_group_path %>

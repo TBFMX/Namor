@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  camp_name: MyString
+  bud_name: MyString
+  camp_id: 1
+  bud_id: 1
+  bud_amount: 1
+
+two:
+  camp_name: MyString
+  bud_name: MyString
+  camp_id: 1
+  bud_id: 1
+  bud_amount: 1

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ad group:</strong>
+  <%= @keyword.ad_group_id %>
+</p>
+
+<p>
+  <strong>Keywords:</strong>
+  <%= @keyword.keywords %>
+</p>
+
+<%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+<%= link_to 'Back', keywords_path %>

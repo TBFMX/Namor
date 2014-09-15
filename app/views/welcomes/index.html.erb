@@ -1,0 +1,15 @@
+<h1>Welcome to the AdWords on Rails demo application</h1>
+
+<p>Start by selecting an account.</p>
+
+<div id="main-menu">
+  <ol>
+    <li><%= link_to("List Accounts", accounts_path) %></li>
+    <li><%= link_to("Enter Test Account ID", account_input_path) %></li>
+    <li><%= link_to("List Campaigns", campaings_path) %></li>
+    <!--<li><%#= link_to("Retrieve a report", report_index_path) %></li>-->
+    <li><%= link_to("Add a AdWords", new_adword_text_path) %></li>
+    <li><%= link_to("View Groups", ad_groups_path) %></li>
+    <li><%= link_to("Add Keywords To Group", new_keyword_path) %></li>
+  </ol>
+</div>
