@@ -53,5 +53,4 @@ gem 'google-adwords-api', '~> 0.11.1'
 # Gem for OAuth authorization.
 gem 'oauth2'
 
-gem 'mysql2'
 gem 'activerecord-session_store'
