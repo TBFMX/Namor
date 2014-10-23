@@ -1,0 +1,12 @@
+<div id="manager" class="sombreado">
+  <% account_text = (@selected_account.nil?) ? 'Not selected' : @selected_account %>
+  <div class="tercio">
+    <b>Cuenta Seleccionada:</b><br><%= account_text %>
+  </div>
+  <div class="tercio">
+    <b>Campaña Activa:</b><br><%= session[:active_camp].to_s %>
+  </div>    
+  <div class="tercio">
+    <b>Grupo Activo:</b><br><%= session[:active_gr].to_s %>
+  </div>
+</div>
