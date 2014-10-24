@@ -10,5 +10,7 @@
   <%= @keyword.keywords %>
 </p>
 
-<%= link_to 'Edit', edit_keyword_path(@keyword) %> |
-<%= link_to 'Back', keywords_path %>
+<div class="centrar">
+  <%= link_to 'Edit', edit_keyword_path(@keyword), class: "button_navegacion"  %>
+  <%= link_to 'Back', keywords_path, class: "button_navegacion"  %>  
+</div>

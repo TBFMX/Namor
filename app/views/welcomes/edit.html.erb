@@ -2,5 +2,7 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @welcome %> |
-<%= link_to 'Back', welcomes_path %>
+<div class="centrar">
+  <%= link_to 'Show', @welcome, class: "button_navegacion"  %>
+  <%= link_to 'Back', welcomes_path, class: "button_navegacion"  %>  
+</div>

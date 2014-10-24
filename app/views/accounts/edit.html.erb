@@ -2,5 +2,8 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @account %> |
-<%= link_to 'Back', accounts_path %>
+
+<div class="centrar">
+  <%= link_to 'Show', @account, class: "button_navegacion"  %>
+  <%= link_to 'Back', accounts_path, class: "button_navegacion"  %>  
+</div>

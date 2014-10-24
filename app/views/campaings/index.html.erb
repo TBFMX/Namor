@@ -25,9 +25,7 @@
 
 <% end %>
 
-<div id="local-footer">
-  <span class="small-print"><%= link_to("Back to home", root_path) %></span>
+<div class="centrar">
+  <%= link_to("Back to home", root_path, class: "button_navegacion") %>
+  <%= link_to 'New Campaing', new_campaing_path, class: "button_navegacion" %>
 </div>
-
-
-<%= link_to 'New Campaing', new_campaing_path %>

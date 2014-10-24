@@ -2,5 +2,7 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @session %> |
-<%= link_to 'Back', sessions_path %>
+<div class="centrar">
+  <%= link_to 'Show', @session, class: "button_navegacion"  %>
+  <%= link_to 'Back', sessions_path, class: "button_navegacion"  %>  
+</div>

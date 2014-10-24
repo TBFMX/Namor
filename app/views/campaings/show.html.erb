@@ -25,5 +25,7 @@
   <%= @campaing.bud_amount %>
 </p>
 
-<%= link_to 'Edit', edit_campaing_path(@campaing) %> |
-<%= link_to 'Back', campaings_path %>
+<div class="centrar">
+  <%= link_to 'Edit', edit_campaing_path(@campaing), class: "button_navegacion"  %>
+  <%= link_to 'Back', campaings_path, class: "button_navegacion"  %>  
+</div>

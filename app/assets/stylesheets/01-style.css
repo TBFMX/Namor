@@ -24,6 +24,7 @@ p,a,h1,h2,h3,h4,h5,h6{padding: 5px;}
 
 h1{text-align: center;}
 
+form{margin: 20px;}
 a 			{color: #000000;}
 a:link 		{color: #000000;}
 a:visited 	{color: #666666;}
@@ -153,4 +154,9 @@ a:active 	{color: #0000FF;}
 	text-align: center;
 	float: left;
 	color: #000;
+}
+
+.centrar{
+	width: 300px;
+	margin: 0 auto;
 }

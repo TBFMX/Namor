@@ -20,5 +20,7 @@
   <%= @ad_group.gr_id %>
 </p>
 
-<%= link_to 'Edit', edit_ad_group_path(@ad_group) %> |
-<%= link_to 'Back', ad_groups_path %>
+<div class="centrar">
+  <%= link_to 'Edit', edit_ad_group_path(@ad_group), class: "button_navegacion"  %> 
+  <%= link_to 'Back', ad_groups_path, class: "button_navegacion"  %>   
+</div>
